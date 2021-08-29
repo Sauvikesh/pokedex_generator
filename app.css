@@ -1,0 +1,27 @@
+#headerText{
+    text-align: center;
+    color: white;
+    background-color: #CC0000;
+    margin:0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+}
+#pokemonImage{
+    display: flex;
+    justify-content: center;
+    image-rendering: pixelated;
+}
+#pokemonName{
+    display: flex;
+    justify-content: center;
+    height: 10px;
+}
+#errorMessage{
+    display: flex;
+    justify-content: center;
+}
