@@ -41,13 +41,24 @@ function getPokemon(input){ // gets the image of the pokemon and displays it on 
         const pokemon = {}
         pokemon['name'] = data.name
         pokemon['sprite'] = data.sprites['front_default']
+        pokemon['shinySprite'] = data.sprites['front_shiny']
         console.log(`the pokemons name is ${pokemon.name}`)
 
         const divPic = document.createElement('div')
+
         const elem = document.createElement('img')
         elem.src = pokemon['sprite']
         elem.alt = "picture"
+        elem.width = 150
+        elem.height = 150
+        const elemShiny = document.createElement('img')
+        elemShiny.src = pokemon['shinySprite']
+        elemShiny.alt = "picture"
+        elemShiny.width = 150
+        elemShiny.height = 150
+
         divPic.appendChild(elem)
+        divPic.appendChild(elemShiny)
         divPic.id = "pokemonImage"
         document.body.appendChild(divPic)
 

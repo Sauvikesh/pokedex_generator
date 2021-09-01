@@ -11,17 +11,22 @@
     display: flex;
     justify-content: center;
 }
-#pokemonImage{
-    display: flex;
+#pokemonImage{ /* applied to one div*/
+    display: grid;
+    grid-template-columns: max-content max-content;
     justify-content: center;
-    image-rendering: pixelated;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin-top: 50px;
+    border: 10px solid black;
 }
 #pokemonName{
-    display: flex;
+    display: grid;
     justify-content: center;
     height: 10px;
 }
 #errorMessage{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
